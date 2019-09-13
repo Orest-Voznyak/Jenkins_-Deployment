@@ -13,8 +13,9 @@ cat <<EOF > index.html
 EOF
 echo "=============Build Finished============"
 
+
 echo "=============Test Started============"
-result='grep "Hеllo" index.html | wc -1'
+result=`grep "Hе5llo" index.html | wc -1`
 echo $result
 if [ "$result" = "1" ]
 then
